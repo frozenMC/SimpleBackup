@@ -194,7 +194,7 @@ public class SimpleBackup extends JavaPlugin {
 
         // Broadcast the backup completion if enabled
         if (broadcast) {
-            getServer().broadcastMessage(ChatColor.BLUE + message + " " + customMessageEnd);
+            getServer().broadcastMessage(ChatColor.RED + message + " " + ChatColor.WHITE + customMessageEnd);
         }
         loginListener.notifyBackupCreated();
     }
