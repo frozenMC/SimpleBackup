@@ -151,7 +151,7 @@ public class SimpleBackup extends JavaPlugin {
         // Begin backup of worlds
         // Broadcast the backup initialization if enabled
         if (broadcast) {
-            getServer().broadcastMessage(ChatColor.BLUE + message + " " + customMessage);
+            getServer().broadcastMessage(ChatColor.RED + message + " " + ChatColor.WHITE + customMessage);
         }
         // Loop through all the specified worlds and save them
         List<File> foldersToBackup = new ArrayList<File>();
